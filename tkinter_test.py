@@ -1,3 +1,4 @@
 import tkinter as tk
 root = tk.Tk()
-root.title("Tic Tac Toe")
+root.title("Test")
+root.mainloop()

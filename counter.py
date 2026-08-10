@@ -10,6 +10,7 @@ def function():
         count += 1
     if count == 10:
         label.config(text="MAX SCORE!")
+        root.config(bg="green")
     else:
         label.config(text=f"Count: {count}") 
     root.title(f"Score: {count}")    
@@ -29,7 +30,8 @@ def function_reset():
     global count
     count = 0
     label.config(text="START")
-    root.title("Let's Count")    
+    root.title("Let's Count")
+    root.config(bg="SystemButtonFace") 
 
 tk.Button(root, text="reset", command=function_reset).pack()
 

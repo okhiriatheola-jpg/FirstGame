@@ -32,5 +32,5 @@ def function_reset():
     root.title("Let's Count")    
 
 tk.Button(root, text="reset", command=function_reset).pack()
- 
+
 root.mainloop()

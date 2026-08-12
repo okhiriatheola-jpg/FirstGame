@@ -25,9 +25,9 @@ def play_game(player_move):
 		result_label.config(text=f"You Played {player_move}! \n Computer played {computer_choice}! \n Computer won!")
 	
 
-button=tk.Button(text=("Rock"), command=lambda: play_game("rock")).pack()
-button=tk.Button(text=("Paper"), command=lambda: play_game("paper")).pack()
-button=tk.Button(text=("Scissors"), command=lambda: play_game("scissors")).pack()
+button=tk.Button(text=("Rock"), command=lambda: play_game("rock"), width=20, height=4, bg="blue").pack(pady=20)
+button=tk.Button(text=("Paper"), command=lambda: play_game("paper"), width=20, height=4, bg="green").pack(pady=20)
+button=tk.Button(text=("Scissors"), command=lambda: play_game("scissors"), width=20, height=4, bg="red").pack(pady=20)
 
 
 root.mainloop()
